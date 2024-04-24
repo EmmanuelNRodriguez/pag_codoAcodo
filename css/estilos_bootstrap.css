@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*configuracion de variables*/
+:root{
+    --main-color: #f3f3f3;
+    --secondary-color: #161516;
+    --third-color: #850f0f;
+    --third-color-t: #840404bc;
+    --grosor-negrita :bold;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.bgBordo{
+    background-color: var(--third-color);
+}
+header{
+    height: 15vh;
+    nav{
+        height: 100%;
+    }
+}
+@media screen and (max-width:575px){
+    header{
+        height: initial;
+        nav{
+            height: 100%;
+        }
+    }
+}
