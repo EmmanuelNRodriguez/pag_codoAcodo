@@ -7,7 +7,7 @@
 :root{
     --main-color: #f3f3f3;
     --secondary-color: #161516;
-    --third-color: #850f0f;
+    --third-color: lightslategray;
     --third-color-t: #840404bc;
     --grosor-negrita :bold;
 }
@@ -16,6 +16,67 @@ body{
     font-family: 'Nunito', sans-serif;
     background-color: var(--secondary-color);
     color: var(--main-color);
+}
+
+.textoDetalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainDetalle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+#parr_deta{
+    width: 75%;
+}
+
+.trailer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    background-color: var(--third-color);
+    color: var(--main-color);
+    padding: 20px;
+    nav{
+        ul{
+            list-style: none;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: var(--main-color);
+                    font-size: 1.4rem;
+                }
+            }
+          
+        }
+    }
+    .flechaArriba{
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+#list_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
 }
 
 .bgBordo{

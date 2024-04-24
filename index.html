@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAC-MOVIES</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <title>ENRflix - Somos lo mas!</title>
     <link rel="stylesheet" href="./css/flexbox.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/estilos_bootstrap.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -18,7 +17,7 @@
             <div class="container">
               <a class="navbar-brand" href="../index.html">
                 <i class="fas fa-film" aria-hidden="true"></i>
-                <span>CAC-Movies</span>
+                <span>ENRflix</span>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,22 +45,22 @@
             <div class="contenedorTitulos">
                 <h1 >Películas y series ilimitadas <br> en un solo lugar</h1>
                 <h2 >Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
-                <a  href="./pages/registrarse.html">Registrate</a>
+                <a id="boton_hover" href="./pages/registrarse.html">Registrate</a>
             </div>
            
         </section>
-        <section >
+        <section id="busqueda">
             <h2 >¿Qué estas buscando para ver?</h2>
-            <form >
+            <form id="form_busq">
                 <input type="text" placeholder="Buscar..." id="buscar" name="buscar">
-                <input type="submit" value="Buscar">
+                <input id="boton_busq" type="submit" value="Buscar">
             </form>
            
 
         </section>
         <hr>
         <section id="tendencias" class="peliculasTendencias">
-            <h2>Las tendencias de hoy</h2>
+            <h2>Las que son tendencia...</h2>
             <div class="galeriaTendencias">
                 <div> 
                     <a href="./pages/detalle.html"><img  src="./assets/img/peli_1.jpg" alt="The Beekeeper" loading="lazy"></a>
@@ -94,7 +93,7 @@
         </section>
         <hr>
         <section class="peliculasAclamadas" >
-            <h2>Las más aclamadas</h2>
+            <h2>INOLVIDABLES...</h2>
              <div class="galeriaAclamadas">
                 <div >
                     <img  src="./assets/img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">

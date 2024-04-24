@@ -9,7 +9,7 @@
 :root{
     --main-color: #f3f3f3;
     --secondary-color: #161516;
-    --third-color: #850f0f;
+    --third-color: lightslategray;
     --third-color-t: #840404bc;
     --grosor-negrita :bold;
 }
@@ -30,6 +30,26 @@ h1,h2{
     margin-bottom: 20px;
 }
 
+#busqueda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#form_busq{
+    gap: 20px;
+}
+
+#boton_busq{
+    min-width: 100px;
+    height: 35px;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0), -5px -5px 12px black inset;
+}
 
 /*media query 992px*/
 @media screen and (max-width: 992px){
@@ -93,7 +113,7 @@ estilos seccion principal
 */
 .sectionTitulos{
     height: 85vh;
-    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/banner-bg.jpg");
+    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/avenger_flyer.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +124,7 @@ estilos seccion principal
     .contenedorTitulos{
         text-align: center;
         /*efecto blur a un contenedor*/
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(2px);
         width: 60%;
         margin:0 auto;
         border-radius: 5px;
@@ -117,6 +137,10 @@ estilos seccion principal
             border:2px solid var(--main-color);
             border-radius: 5px;
             padding:10px 20px;
+        }
+        a:hover{
+            background-color: red;
+            border:none
         }
     }
 }
@@ -162,7 +186,12 @@ estilos seccion principal
         }
     }
     button{
-       margin-bottom:20px;
+        min-width: 100px;
+        height: 35px;
+        font-size: 1rem;
+        border-style: none;
+        border-radius: 4px;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0), -5px -5px 12px black inset;
     }
 }
 @media screen and (max-width: 992px){
