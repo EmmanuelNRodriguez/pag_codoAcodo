@@ -3,8 +3,6 @@ const password = document.querySelector("#password");
 
 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
-  
-console.log("pase");
 
   e.preventDefault();
   
