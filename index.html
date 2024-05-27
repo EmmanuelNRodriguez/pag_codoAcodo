@@ -13,8 +13,25 @@
 </head>
 <body>
     <header class="header">
+        <span id="header_api">
+            <div id="ubicacion">
+                <div id="imag_coun"></div>
+                <div id="city"></div>
+                <div id="country"></div>
+            </div>
+            <div id="clima">
+                <div id="imag"></div>
+                <div id="datCli">
+                    <div id="temp"></div>
+                    <div id="sens"></div>
+                    <div id="pres"></div>
+                </div>
+            </div>
+        </span>
+        
         <nav class="navbar navbar-expand-lg navbar-dark bgBordo">
             <div class="container">
+            
               <a class="navbar-brand" href="../index.html">
                 <i class="fas fa-film" aria-hidden="true"></i>
                 <span>ENRflix</span>
@@ -34,7 +51,6 @@
                     <a class="nav-link active fs-4" href="./pages/iniciosesion.html">Iniciar Sesión</a>
                   </li>
                 </ul>
-               
               </div>
             </div>
           </nav>
@@ -149,5 +165,6 @@
         </a>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/seguimiento.js"></script>
 </body>
 </html>
